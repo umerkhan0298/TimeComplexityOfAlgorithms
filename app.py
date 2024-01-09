@@ -84,9 +84,9 @@ def checking():
         inp_list=inp_list, number=number
     )
     print(response_data)
-    no_element_found = all(data['index'] == -1 for data in response_data.values())
-    if not no_element_found:
-        graph(response_data)
+    # no_element_found = all(data['index'] == -1 for data in response_data.values())
+    # if not no_element_found:
+    #     graph(response_data)
     return jsonify(response_data)
 
 if __name__ == '__main__':
